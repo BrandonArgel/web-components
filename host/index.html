@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Custom Elements</title>
+	</head>
+	<body>
+		<my-element>
+			<span slot="title">My Custom Element 1</span>
+			<span slot="content"> This is my custom element! </span>
+		</my-element>
+		<my-element class="blue" yellow>
+			<span slot="title">My Custom Element 2</span>
+			<span slot="content"> This is my custom element! </span>
+		</my-element>
+		<my-element yellow>
+			<span slot="title">My Custom Element 3</span>
+			<span slot="content"> This is my custom element! </span>
+		</my-element>
+		<article class="card">
+			<my-element>
+				<span slot="title">My Custom Element 3</span>
+				<span slot="content"> This is my custom element! </span>
+			</my-element>
+		</article>
+		<script type="module" src="./my-element.js"></script>
+	</body>
+</html>
